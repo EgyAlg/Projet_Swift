@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		596D57B822A5F35E004C392A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596D57B722A5F35E004C392A /* AppDelegate.swift */; };
-		596D57BA22A5F35E004C392A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596D57B922A5F35E004C392A /* ViewController.swift */; };
 		596D57BD22A5F35E004C392A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 596D57BB22A5F35E004C392A /* Main.storyboard */; };
 		596D57BF22A5F361004C392A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 596D57BE22A5F361004C392A /* Assets.xcassets */; };
 		596D57C222A5F361004C392A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 596D57C022A5F361004C392A /* LaunchScreen.storyboard */; };
@@ -41,7 +40,6 @@
 /* Begin PBXFileReference section */
 		596D57B422A5F35E004C392A /* iOSWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		596D57B722A5F35E004C392A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		596D57B922A5F35E004C392A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		596D57BC22A5F35E004C392A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		596D57BE22A5F361004C392A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		596D57C122A5F361004C392A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -91,7 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				596D57B722A5F35E004C392A /* AppDelegate.swift */,
-				596D57B922A5F35E004C392A /* ViewController.swift */,
 				596D57BB22A5F35E004C392A /* Main.storyboard */,
 				596D57BE22A5F361004C392A /* Assets.xcassets */,
 				596D57C022A5F361004C392A /* LaunchScreen.storyboard */,
@@ -190,7 +187,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				596D57DB22A5F692004C392A /* SearchViewController.swift in Sources */,
-				596D57BA22A5F35E004C392A /* ViewController.swift in Sources */,
 				596D57D922A5F656004C392A /* FavorisViewController.swift in Sources */,
 				596D57D722A5F5D8004C392A /* FiveDaysViewController.swift in Sources */,
 				596D57B822A5F35E004C392A /* AppDelegate.swift in Sources */,
