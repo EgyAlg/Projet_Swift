@@ -85,8 +85,8 @@ class FiveDaysViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     @IBAction func ClickButton(_ sender: Any) {
-        let alert = UIAlertController(title: "Confirm", message: "Are you sure you want to delete it from your favorites?", preferredStyle: .alert)
-        let clearAction = UIAlertAction(title: "Delete", style: .destructive) { (alert: UIAlertAction!) -> Void in
+        let alert = UIAlertController(title: "Confirmation", message: "Êtes-vous sûr de vouloir retirer cette ville de vos Favoris ?", preferredStyle: .alert)
+        let clearAction = UIAlertAction(title: "Effacer", style: .destructive) { (alert: UIAlertAction!) -> Void in
             self.FavButton.isSelected = false
             var index: Int = 0
             for elem in self.listFav{
@@ -97,7 +97,7 @@ class FiveDaysViewController: UIViewController, UITableViewDelegate, UITableView
             self.listFav.remove(at: index)
             
         }
-        let cancelAction = UIAlertAction(title: "Cancel", style: .default) { (alert: UIAlertAction!) -> Void in
+        let cancelAction = UIAlertAction(title: "Annuler", style: .default) { (alert: UIAlertAction!) -> Void in
             
         }
         

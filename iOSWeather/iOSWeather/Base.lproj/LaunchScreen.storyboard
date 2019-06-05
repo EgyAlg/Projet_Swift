@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,28 +17,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="iOS Weather " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zr2-qx-T1g">
-                                <rect key="frame" x="0.0" y="76.5" width="375" height="68.5"/>
-                                <fontDescription key="fontDescription" name="TrebuchetMS-Italic" family="Trebuchet MS" pointSize="54"/>
-                                <color key="textColor" red="0.21316626579995912" green="0.18460508571274548" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="IMG_0972.png" translatesAutoresizingMaskIntoConstraints="NO" id="LUK-5h-mp7">
-                                <rect key="frame" x="50" y="229" width="275" height="208"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="IMG_0972.png" translatesAutoresizingMaskIntoConstraints="NO" id="LUK-5h-mp7">
+                                <rect key="frame" x="20" y="344" width="335" height="208"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibb-jG-XQt">
-                                <rect key="frame" x="0.0" y="659" width="375" height="63"/>
+                                <rect key="frame" x="20" y="679" width="335" height="63"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS-Italic" family="Trebuchet MS" pointSize="54"/>
                                 <color key="textColor" red="0.19596205211263307" green="0.17065802019113241" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="iOS Weather " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zr2-qx-T1g">
+                                <rect key="frame" x="20" y="94" width="335" height="63"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS-Italic" family="Trebuchet MS" pointSize="54"/>
+                                <color key="textColor" red="0.21316626579995912" green="0.18460508571274548" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="LUK-5h-mp7" firstAttribute="top" secondItem="zr2-qx-T1g" secondAttribute="bottom" constant="50" id="3ct-nz-q5P"/>
-                            <constraint firstItem="LUK-5h-mp7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="JAn-p7-Gw4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LUK-5h-mp7" secondAttribute="trailing" constant="50" id="oLh-aC-QPf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ibb-jG-XQt" secondAttribute="bottom" constant="56" id="v2A-EP-PhY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ibb-jG-XQt" secondAttribute="trailing" constant="20" id="0B6-87-RZI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ibb-jG-XQt" secondAttribute="bottom" constant="120" id="4V0-Q9-bZU"/>
+                            <constraint firstItem="zr2-qx-T1g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="70w-AF-eOR"/>
+                            <constraint firstItem="LUK-5h-mp7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="DeI-QR-oa1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zr2-qx-T1g" secondAttribute="trailing" constant="20" id="Ei3-vV-lqB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LUK-5h-mp7" secondAttribute="trailing" constant="20" id="FGj-gb-JM3"/>
+                            <constraint firstItem="ibb-jG-XQt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="IGF-aM-GA6"/>
+                            <constraint firstItem="zr2-qx-T1g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Zg8-Y0-OgZ"/>
+                            <constraint firstItem="ibb-jG-XQt" firstAttribute="top" secondItem="LUK-5h-mp7" secondAttribute="bottom" constant="120" id="l1y-h9-3ya"/>
+                            <constraint firstItem="LUK-5h-mp7" firstAttribute="top" secondItem="zr2-qx-T1g" secondAttribute="bottom" constant="180" id="w7J-28-gKn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
