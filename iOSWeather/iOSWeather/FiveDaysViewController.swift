@@ -95,6 +95,7 @@ class FiveDaysViewController: UIViewController, UITableViewDelegate, UITableView
                 }
             }
             self.listFav.remove(at: index)
+            self.save(listFav: self.listFav)
             
         }
         let cancelAction = UIAlertAction(title: "Annuler", style: .default) { (alert: UIAlertAction!) -> Void in
