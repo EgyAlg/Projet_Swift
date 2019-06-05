@@ -351,18 +351,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8f-e7-XsW">
-                                <rect key="frame" x="58" y="544" width="85" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8f-e7-XsW">
+                                <rect key="frame" x="50" y="547" width="85" height="30"/>
                                 <state key="normal" title="Vue détailée"/>
                                 <connections>
                                     <action selector="moreClick:" destination="t2J-jj-BTQ" eventType="touchUpInside" id="p5f-Pp-yRP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3W-cr-YSC">
-                                <rect key="frame" x="236" y="544" width="49" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3W-cr-YSC">
+                                <rect key="frame" x="16" y="43" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Favoris"/>
+                                <state key="normal" image="Coeur blanc.svg.jpg"/>
+                                <state key="selected" image="Coeur Rouge.svg.png"/>
                                 <connections>
                                     <action selector="clickButton:" destination="t2J-jj-BTQ" eventType="touchUpInside" id="bJo-Lb-RUe"/>
                                 </connections>
@@ -371,14 +371,6 @@
                                 <rect key="frame" x="282" y="80" width="77" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DaE-Bb-bZo">
-                                <rect key="frame" x="168" y="597" width="39" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Menu"/>
-                                <connections>
-                                    <segue destination="eHq-IM-hM3" kind="show" id="zkM-0D-eqR"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Temp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j7I-su-eEI">
                                 <rect key="frame" x="157" y="104" width="60" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -386,12 +378,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DaE-Bb-bZo">
+                                <rect key="frame" x="286" y="547" width="39" height="30"/>
+                                <state key="normal" title="Menu"/>
+                                <connections>
+                                    <segue destination="eHq-IM-hM3" kind="show" id="zkM-0D-eqR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="T8f-e7-XsW" firstAttribute="leading" secondItem="SxC-vN-EZy" secondAttribute="leading" constant="50" id="Bko-tx-FcF"/>
                             <constraint firstItem="td8-vd-zZU" firstAttribute="leading" secondItem="SxC-vN-EZy" secondAttribute="leading" id="EcS-6g-Qj1"/>
                             <constraint firstItem="td8-vd-zZU" firstAttribute="top" secondItem="SxC-vN-EZy" secondAttribute="top" constant="30" id="Jm8-ml-oxl"/>
                             <constraint firstItem="td8-vd-zZU" firstAttribute="trailing" secondItem="SxC-vN-EZy" secondAttribute="trailing" id="OlJ-Lb-j9e"/>
+                            <constraint firstItem="SxC-vN-EZy" firstAttribute="bottom" secondItem="DaE-Bb-bZo" secondAttribute="bottom" constant="90" id="Vtf-og-3Jt"/>
+                            <constraint firstItem="SxC-vN-EZy" firstAttribute="trailing" secondItem="DaE-Bb-bZo" secondAttribute="trailing" constant="50" id="gCk-Fm-6zM"/>
+                            <constraint firstItem="SxC-vN-EZy" firstAttribute="bottom" secondItem="T8f-e7-XsW" secondAttribute="bottom" constant="90" id="wSf-t2-XUb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SxC-vN-EZy"/>
                     </view>
@@ -430,6 +433,10 @@
             <point key="canvasLocation" x="-649" y="-26"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Coeur Rouge.svg.png" width="512" height="512"/>
+        <image name="Coeur blanc.svg.jpg" width="560" height="540"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="mdG-z9-lPp"/>
     </inferredMetricsTieBreakers>
