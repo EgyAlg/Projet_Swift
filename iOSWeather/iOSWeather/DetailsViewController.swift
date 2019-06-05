@@ -120,7 +120,7 @@ class DetailsViewController: UIViewController,UITableViewDelegate, UITableViewDa
     }
     
     @IBAction func moreClick(_ sender: Any) {
-        performSegue(withIdentifier: "MoreDays", sender: self)
+        performSegue(withIdentifier: "FiveDays", sender: self)
     }
     
     @IBAction func clickButton(_ sender: Any) {
